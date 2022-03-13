@@ -1,0 +1,44 @@
+<!-- default webpage -->
+<html>
+<head>
+  <title>Tube Battle</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+  <script src="./tubez.js"></script>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Tube Battle</h1>
+      </div>
+      <div class="content">
+        <div class="left">
+          <div class="left-content">
+            <div class="left-content-header">
+              <h2>Tube Battle</h2>
+            </div>
+            <div class="left-content-body">
+              <p>
+                Welcome to Tube Battle!
+              </p>
+              <p>
+                This is a game where you can battle each other to see who can get the most points.
+              </p>
+              <div class="cols">
+                <div class="col">
+                  <div>First Video Title:</div>
+                  <div id="vid1"></div>
+                  <button onclick="choose(1)">Select</button>
+                  <div id="vid1-views"></div>
+                  <div id="vid1-link"></div>
+                </div>
+                <div class="col">
+                  <div>Second Video Title:</div>
+                  <div id="vid2"></div>
+                  <button onclick="choose(2)">Select</button>
+                  <div id="vid2-views"></div>
+                  <div id="vid2-link"></div>
+                </div>
+              </div>
+              <div id="win"></div>
+  </body>
+</html>

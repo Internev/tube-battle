@@ -1,0 +1,9 @@
+.cols {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  padding: 10px;
+}
