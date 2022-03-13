@@ -12,11 +12,11 @@ const getDataFromUrl = async (url) => {
 
 // fetch the url
 const getIt = async () => {
-  const randomUrl = `https://www.googleapis.com/youtube/v3/search?id=7lCDEYXw3mM&key=AIzaSyDq9dghsRHEL-AIlG0-LMBcE0qdW1pI2Ns&maxResults=1&part=snippet&type=video&q=${random(4)}`
+  const randomUrl = `https://www.googleapis.com/youtube/v3/search?id=7lCDEYXw3mM&key={KEYLOL}&maxResults=1&part=snippet&type=video&q=${random(4)}`
   const data = await getDataFromUrl(randomUrl)
   const { id: { videoId } } = data.items[0]
 
-  const url = `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key=AIzaSyDq9dghsRHEL-AIlG0-LMBcE0qdW1pI2Ns&part=snippet,contentDetails,statistics,status`
+  const url = `https://www.googleapis.com/youtube/v3/videos?id=${videoId}&key={KEYLOL}&part=snippet,contentDetails,statistics,status`
   const result = await getDataFromUrl(url)
   const title = result.items[0].snippet.title
   const viewCount = result.items[0].statistics.viewCount
